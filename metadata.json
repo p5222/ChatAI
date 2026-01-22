@@ -1,0 +1,8 @@
+{
+  "name": " 理邦仪器知识助手2",
+  "description": "理邦仪器专用智能知识辅助系统，支持专业文档解析与性能监控。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
