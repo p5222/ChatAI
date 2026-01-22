@@ -17,12 +17,8 @@
                         "primary": "#0d7991",
                         "primary-dark": "#0a5d70",
                         "primary-light": "#e0f2f5",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#171e2b",
-                        "surface-light": "#ffffff",
-                        "surface-dark": "#1f2937",
-                        "text-main": "#111718",
-                        "text-secondary": "#618289",
+                        "background-light": "#f8fafc",
+                        "text-main": "#0f172a",
                     },
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"]
@@ -32,20 +28,19 @@
         }
     </script>
     <style>
-        body { font-family: 'Manrope', 'PingFang SC', sans-serif; }
+        body { font-family: 'Manrope', 'PingFang SC', sans-serif; background-color: #f8fafc; }
         .custom-scrollbar::-webkit-scrollbar { width: 4px; height: 4px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #e2e8f0; border-radius: 20px; }
         
-        /* Markdown 表格深度定制 */
-        .prose table { width: 100% !important; border-collapse: collapse; font-size: 0.8rem; margin: 1.5rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.02); overflow: hidden; border-radius: 12px; }
-        .prose thead th { background: #f1f5f9; padding: 12px 10px; border: 1px solid #e2e8f0; text-align: left; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; }
-        .prose tbody td { padding: 10px; border: 1px solid #e2e8f0; vertical-align: top; color: #334155; line-height: 1.5; }
-        .prose tbody tr:nth-child(even) { background: #f8fafc; }
-        .prose tbody tr:hover { background: #f1f5f9; }
+        /* Markdown 表格极致简洁化 */
+        .prose table { width: 100% !important; border-collapse: collapse; font-size: 0.85rem; margin: 1rem 0; background: white; border-radius: 12px; overflow: hidden; border: 1px solid #f1f5f9; }
+        .prose thead th { background: #f8fafc; padding: 10px; text-align: left; font-weight: 800; color: #64748b; border-bottom: 2px solid #f1f5f9; }
+        .prose tbody td { padding: 10px; border-bottom: 1px solid #f1f5f9; color: #334155; }
+        .prose tbody tr:last-child td { border-bottom: none; }
         
-        .prose blockquote { border-left: 4px solid #0d7991; padding-left: 1rem; font-style: normal; color: #64748b; margin-top: 1.5rem; background: #f8fafc; padding-top: 0.5rem; padding-bottom: 0.5rem; }
-        .markdown-content table { display: table !important; }
+        .markdown-content p { margin-bottom: 1em; }
+        .markdown-content strong { color: #0d7991; font-weight: 800; }
     </style>
 <script type="importmap">
 {
@@ -60,9 +55,8 @@
 }
 </script>
 </head>
-<body class="bg-background-light text-text-main antialiased overflow-hidden">
+<body class="text-text-main antialiased overflow-hidden">
     <div id="root"></div>
-    <!-- 引入入口脚本 -->
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
